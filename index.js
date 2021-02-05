@@ -56,8 +56,10 @@ module.exports = {
     "array-callback-return": "off",
     "no-confusing-arrow": "off",
     "consistent-return": "off",
-    "react/require-default-props": "off",
     "no-plusplus": "off",
+    // 某些情况下会推断错误, 例如 styled 包装组件时
+    "react/no-unused-prop-types": "off",
+    "react/require-default-props": "off",
     "react/jsx-one-expression-per-line": "off",
     "import/prefer-default-export": "off",
     "import/no-unresolved": "off",
