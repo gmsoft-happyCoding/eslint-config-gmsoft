@@ -74,5 +74,6 @@ module.exports = {
     "jsx-a11y/anchor-is-valid": "off",
     "react/jsx-wrap-multilines": "off",
     "react/jsx-closing-tag-location": "off",
+    "react/jsx-curly-newline": "off",
   },
 };
