@@ -16,7 +16,16 @@ module.exports = {
     browser: true,
   },
   rules: {
-    indent: ["error", 2, { SwitchCase: 1 }],
+    indent: "off",
+    "@typescript-eslint/indent": [
+      "error",
+      2,
+      {
+        SwitchCase: 1,
+        offsetTernaryExpressions: true,
+        ignoredNodes: ["ConditionalExpression > ConditionalExpression"],
+      },
+    ],
     "max-len": ["error", { code: 100, ignoreComments: true }],
     "max-lines": [
       "error",
