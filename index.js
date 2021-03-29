@@ -16,7 +16,7 @@ module.exports = {
     browser: true,
   },
   rules: {
-    indent: ["error", 2],
+    indent: ["error", 2, { SwitchCase: 1 }],
     "max-len": ["error", { code: 100, ignoreComments: true }],
     "max-lines": [
       "error",
