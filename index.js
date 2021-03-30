@@ -16,8 +16,7 @@ module.exports = {
     browser: true,
   },
   rules: {
-    indent: "off",
-    "@typescript-eslint/indent": [
+    indent: [
       "error",
       2,
       {
