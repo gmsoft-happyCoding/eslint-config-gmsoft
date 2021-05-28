@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-gmsoft",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "gmsoft's ESLint config",
   "main": "index.js",
   "repository": {
