@@ -22,7 +22,12 @@ module.exports = {
       {
         SwitchCase: 1,
         offsetTernaryExpressions: true,
-        ignoredNodes: ["ConditionalExpression > ConditionalExpression"],
+        ignoredNodes: [
+          "ConditionalExpression > ConditionalExpression",
+          "LogicalExpression > LogicalExpression",
+          "LogicalExpression > JSXElement",
+          "ConditionalExpression > JSXElement",
+        ],
       },
     ],
     "max-len": ["error", { code: 100, ignoreComments: true }],
