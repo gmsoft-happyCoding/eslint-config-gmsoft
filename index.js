@@ -30,6 +30,7 @@ module.exports = {
         ],
       },
     ],
+    "max-params": ["error", { max: 3 }],
     "max-len": ["error", { code: 100, ignoreComments: true }],
     "max-lines": [
       "error",
