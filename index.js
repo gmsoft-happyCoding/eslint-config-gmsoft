@@ -30,6 +30,7 @@ module.exports = {
         ],
       },
     ],
+    camelcase: ['error', { ignoreImports: true, ignoreDestructuring: true, ignoreGlobals: true }],
     "max-params": ["error", { max: 3 }],
     "max-len": ["error", { code: 100, ignoreComments: true }],
     "max-lines": [
@@ -46,6 +47,8 @@ module.exports = {
         functions: "ignore",
       },
     ],
+    "no-restricted-exports": "off",
+    "default-param-last": "off",
     "react/function-component-definition": "off",
     "@typescript-eslint/no-require-imports": "error",
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/FAQ.md#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
