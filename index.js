@@ -23,6 +23,7 @@ module.exports = {
         SwitchCase: 1,
         offsetTernaryExpressions: true,
         ignoredNodes: [
+          "ArrowFunctionExpression > ArrowFunctionExpression",
           "ConditionalExpression > ConditionalExpression",
           "LogicalExpression > LogicalExpression",
           "LogicalExpression > JSXElement",
@@ -30,7 +31,10 @@ module.exports = {
         ],
       },
     ],
-    camelcase: ['error', { ignoreImports: true, ignoreDestructuring: true, ignoreGlobals: true }],
+    camelcase: [
+      "error",
+      { ignoreImports: true, ignoreDestructuring: true, ignoreGlobals: true },
+    ],
     "max-params": ["error", { max: 3 }],
     "max-len": ["error", { code: 100, ignoreComments: true }],
     "max-lines": [
